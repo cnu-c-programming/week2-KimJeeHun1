@@ -4,15 +4,18 @@ int main()
 {
     int in;
     scanf("%d", &in);
-    boolean is=true;
+    int is=1;
     for(int i=2; i<=in/2; i++){
         if(in%i==0)
         {
-            is = false;
+            is = 0;
             break;
         }
     }
-    printf("%d",is);
+    if(is==1)
+    printf("true");
+    else
+    printf("false");
     return 0;
 }
 
